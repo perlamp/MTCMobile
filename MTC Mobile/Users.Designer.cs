@@ -182,7 +182,7 @@
             this.tab_new.Controls.Add(this.lbl_new_username);
             this.tab_new.Location = new System.Drawing.Point(0, 0);
             this.tab_new.Name = "tab_new";
-            this.tab_new.Size = new System.Drawing.Size(232, 239);
+            this.tab_new.Size = new System.Drawing.Size(240, 242);
             this.tab_new.Text = "Nuevo";
             // 
             // lbl_new_confirm
@@ -247,8 +247,6 @@
             this.cbo_new_level.Items.Add("1");
             this.cbo_new_level.Items.Add("2");
             this.cbo_new_level.Items.Add("3");
-            this.cbo_new_level.Items.Add("4");
-            this.cbo_new_level.Items.Add("5");
             this.cbo_new_level.Location = new System.Drawing.Point(137, 55);
             this.cbo_new_level.Name = "cbo_new_level";
             this.cbo_new_level.Size = new System.Drawing.Size(100, 22);
@@ -396,7 +394,7 @@
             this.tab_edit.Controls.Add(this.lbl_edit_username);
             this.tab_edit.Location = new System.Drawing.Point(0, 0);
             this.tab_edit.Name = "tab_edit";
-            this.tab_edit.Size = new System.Drawing.Size(232, 239);
+            this.tab_edit.Size = new System.Drawing.Size(240, 242);
             this.tab_edit.Text = "Editar";
             // 
             // chk_edit_password

@@ -1,0 +1,9 @@
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\ResolveAssemblyReference.cache
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Home.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Index.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Procedures.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Properties.Resources.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Readings.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Security.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC_Mobile.Users.resources
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Release\MTC Mobile.csproj.GenerateResource.Cache

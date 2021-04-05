@@ -19,7 +19,6 @@ C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\Config\MTCm.db
 C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.exe
 C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.ChangePassword.resources
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
@@ -29,3 +28,4 @@ C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.exe
 C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
+C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Security.resources
