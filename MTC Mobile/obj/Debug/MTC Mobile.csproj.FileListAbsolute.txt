@@ -64,3 +64,6 @@ C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\test.db
 C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
 C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
 C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
+C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources
+>>>>>>> 528eff7046df51665cfbe39c88a35df90543579c
+C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources

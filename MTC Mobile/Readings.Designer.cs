@@ -34,6 +34,15 @@
             this.mnu_exit = new System.Windows.Forms.MenuItem();
             this.tab_readings = new System.Windows.Forms.TabControl();
             this.tab_read = new System.Windows.Forms.TabPage();
+            this.pnl_reading_options = new System.Windows.Forms.Panel();
+            this.lbl_options = new System.Windows.Forms.Label();
+            this.rdo_weeks = new System.Windows.Forms.RadioButton();
+            this.rdo_days = new System.Windows.Forms.RadioButton();
+            this.rdo_nothing = new System.Windows.Forms.RadioButton();
+            this.cbo_weeks = new System.Windows.Forms.ComboBox();
+            this.cbo_days = new System.Windows.Forms.ComboBox();
+            this.rdo_edf = new System.Windows.Forms.RadioButton();
+            this.rdo_xml = new System.Windows.Forms.RadioButton();
             this.cbo_readings = new System.Windows.Forms.ComboBox();
             this.btn_readings = new System.Windows.Forms.Button();
             this.tab_config = new System.Windows.Forms.TabPage();
@@ -45,19 +54,10 @@
             this.btn_setDirectory = new System.Windows.Forms.Button();
             this.lbl_directoryTitle = new System.Windows.Forms.Label();
             this.lbl_currentDir = new System.Windows.Forms.Label();
-            this.rdo_xml = new System.Windows.Forms.RadioButton();
-            this.rdo_edf = new System.Windows.Forms.RadioButton();
-            this.pnl_reading_options = new System.Windows.Forms.Panel();
-            this.cbo_days = new System.Windows.Forms.ComboBox();
-            this.cbo_weeks = new System.Windows.Forms.ComboBox();
-            this.rdo_nothing = new System.Windows.Forms.RadioButton();
-            this.rdo_days = new System.Windows.Forms.RadioButton();
-            this.rdo_weeks = new System.Windows.Forms.RadioButton();
-            this.lbl_options = new System.Windows.Forms.Label();
             this.tab_readings.SuspendLayout();
             this.tab_read.SuspendLayout();
-            this.tab_config.SuspendLayout();
             this.pnl_reading_options.SuspendLayout();
+            this.tab_config.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu1
@@ -97,6 +97,97 @@
             this.tab_read.Name = "tab_read";
             this.tab_read.Size = new System.Drawing.Size(240, 242);
             this.tab_read.Text = "Lecturas";
+            // 
+            // pnl_reading_options
+            // 
+            this.pnl_reading_options.Controls.Add(this.lbl_options);
+            this.pnl_reading_options.Controls.Add(this.rdo_weeks);
+            this.pnl_reading_options.Controls.Add(this.rdo_days);
+            this.pnl_reading_options.Controls.Add(this.rdo_nothing);
+            this.pnl_reading_options.Controls.Add(this.cbo_weeks);
+            this.pnl_reading_options.Controls.Add(this.cbo_days);
+            this.pnl_reading_options.Location = new System.Drawing.Point(7, 55);
+            this.pnl_reading_options.Name = "pnl_reading_options";
+            this.pnl_reading_options.Size = new System.Drawing.Size(225, 122);
+            this.pnl_reading_options.Visible = false;
+            // 
+            // lbl_options
+            // 
+            this.lbl_options.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbl_options.Location = new System.Drawing.Point(6, 9);
+            this.lbl_options.Name = "lbl_options";
+            this.lbl_options.Size = new System.Drawing.Size(216, 20);
+            this.lbl_options.Text = "Opciones de lectura";
+            this.lbl_options.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // rdo_weeks
+            // 
+            this.rdo_weeks.Location = new System.Drawing.Point(122, 84);
+            this.rdo_weeks.Name = "rdo_weeks";
+            this.rdo_weeks.Size = new System.Drawing.Size(100, 20);
+            this.rdo_weeks.TabIndex = 6;
+            this.rdo_weeks.Text = "Semanas";
+            this.rdo_weeks.CheckedChanged += new System.EventHandler(this.rdo_weeks_CheckedChanged);
+            // 
+            // rdo_days
+            // 
+            this.rdo_days.Location = new System.Drawing.Point(122, 58);
+            this.rdo_days.Name = "rdo_days";
+            this.rdo_days.Size = new System.Drawing.Size(100, 20);
+            this.rdo_days.TabIndex = 5;
+            this.rdo_days.Text = "Días";
+            this.rdo_days.CheckedChanged += new System.EventHandler(this.rdo_days_CheckedChanged);
+            // 
+            // rdo_nothing
+            // 
+            this.rdo_nothing.Location = new System.Drawing.Point(122, 32);
+            this.rdo_nothing.Name = "rdo_nothing";
+            this.rdo_nothing.Size = new System.Drawing.Size(100, 20);
+            this.rdo_nothing.TabIndex = 4;
+            this.rdo_nothing.Text = "Nada";
+            this.rdo_nothing.CheckedChanged += new System.EventHandler(this.rdo_nothing_CheckedChanged);
+            // 
+            // cbo_weeks
+            // 
+            this.cbo_weeks.Items.Add("1");
+            this.cbo_weeks.Items.Add("2");
+            this.cbo_weeks.Items.Add("3");
+            this.cbo_weeks.Items.Add("4");
+            this.cbo_weeks.Location = new System.Drawing.Point(16, 82);
+            this.cbo_weeks.Name = "cbo_weeks";
+            this.cbo_weeks.Size = new System.Drawing.Size(100, 22);
+            this.cbo_weeks.TabIndex = 3;
+            // 
+            // cbo_days
+            // 
+            this.cbo_days.Items.Add("1");
+            this.cbo_days.Items.Add("2");
+            this.cbo_days.Items.Add("3");
+            this.cbo_days.Items.Add("4");
+            this.cbo_days.Items.Add("5");
+            this.cbo_days.Items.Add("6");
+            this.cbo_days.Location = new System.Drawing.Point(16, 56);
+            this.cbo_days.Name = "cbo_days";
+            this.cbo_days.Size = new System.Drawing.Size(100, 22);
+            this.cbo_days.TabIndex = 2;
+            // 
+            // rdo_edf
+            // 
+            this.rdo_edf.Location = new System.Drawing.Point(129, 31);
+            this.rdo_edf.Name = "rdo_edf";
+            this.rdo_edf.Size = new System.Drawing.Size(100, 20);
+            this.rdo_edf.TabIndex = 5;
+            this.rdo_edf.TabStop = false;
+            this.rdo_edf.Text = "EDF";
+            // 
+            // rdo_xml
+            // 
+            this.rdo_xml.Checked = true;
+            this.rdo_xml.Location = new System.Drawing.Point(23, 29);
+            this.rdo_xml.Name = "rdo_xml";
+            this.rdo_xml.Size = new System.Drawing.Size(100, 20);
+            this.rdo_xml.TabIndex = 4;
+            this.rdo_xml.Text = "XML";
             // 
             // cbo_readings
             // 
@@ -203,97 +294,6 @@
             this.lbl_currentDir.Size = new System.Drawing.Size(226, 36);
             this.lbl_currentDir.Text = "Actual:";
             // 
-            // rdo_xml
-            // 
-            this.rdo_xml.Checked = true;
-            this.rdo_xml.Location = new System.Drawing.Point(23, 29);
-            this.rdo_xml.Name = "rdo_xml";
-            this.rdo_xml.Size = new System.Drawing.Size(100, 20);
-            this.rdo_xml.TabIndex = 4;
-            this.rdo_xml.Text = "XML";
-            // 
-            // rdo_edf
-            // 
-            this.rdo_edf.Location = new System.Drawing.Point(129, 31);
-            this.rdo_edf.Name = "rdo_edf";
-            this.rdo_edf.Size = new System.Drawing.Size(100, 20);
-            this.rdo_edf.TabIndex = 5;
-            this.rdo_edf.TabStop = false;
-            this.rdo_edf.Text = "EDF";
-            // 
-            // pnl_reading_options
-            // 
-            this.pnl_reading_options.Controls.Add(this.lbl_options);
-            this.pnl_reading_options.Controls.Add(this.rdo_weeks);
-            this.pnl_reading_options.Controls.Add(this.rdo_days);
-            this.pnl_reading_options.Controls.Add(this.rdo_nothing);
-            this.pnl_reading_options.Controls.Add(this.cbo_weeks);
-            this.pnl_reading_options.Controls.Add(this.cbo_days);
-            this.pnl_reading_options.Location = new System.Drawing.Point(7, 55);
-            this.pnl_reading_options.Name = "pnl_reading_options";
-            this.pnl_reading_options.Size = new System.Drawing.Size(225, 122);
-            this.pnl_reading_options.Visible = false;
-            // 
-            // cbo_days
-            // 
-            this.cbo_days.Items.Add("1");
-            this.cbo_days.Items.Add("2");
-            this.cbo_days.Items.Add("3");
-            this.cbo_days.Items.Add("4");
-            this.cbo_days.Items.Add("5");
-            this.cbo_days.Items.Add("6");
-            this.cbo_days.Location = new System.Drawing.Point(16, 56);
-            this.cbo_days.Name = "cbo_days";
-            this.cbo_days.Size = new System.Drawing.Size(100, 22);
-            this.cbo_days.TabIndex = 2;
-            // 
-            // cbo_weeks
-            // 
-            this.cbo_weeks.Items.Add("1");
-            this.cbo_weeks.Items.Add("2");
-            this.cbo_weeks.Items.Add("3");
-            this.cbo_weeks.Items.Add("4");
-            this.cbo_weeks.Location = new System.Drawing.Point(16, 82);
-            this.cbo_weeks.Name = "cbo_weeks";
-            this.cbo_weeks.Size = new System.Drawing.Size(100, 22);
-            this.cbo_weeks.TabIndex = 3;
-            // 
-            // rdo_nothing
-            // 
-            this.rdo_nothing.Location = new System.Drawing.Point(122, 32);
-            this.rdo_nothing.Name = "rdo_nothing";
-            this.rdo_nothing.Size = new System.Drawing.Size(100, 20);
-            this.rdo_nothing.TabIndex = 4;
-            this.rdo_nothing.Text = "Nada";
-            this.rdo_nothing.CheckedChanged += new System.EventHandler(this.rdo_nothing_CheckedChanged);
-            // 
-            // rdo_days
-            // 
-            this.rdo_days.Location = new System.Drawing.Point(122, 58);
-            this.rdo_days.Name = "rdo_days";
-            this.rdo_days.Size = new System.Drawing.Size(100, 20);
-            this.rdo_days.TabIndex = 5;
-            this.rdo_days.Text = "Días";
-            this.rdo_days.CheckedChanged += new System.EventHandler(this.rdo_days_CheckedChanged);
-            // 
-            // rdo_weeks
-            // 
-            this.rdo_weeks.Location = new System.Drawing.Point(122, 84);
-            this.rdo_weeks.Name = "rdo_weeks";
-            this.rdo_weeks.Size = new System.Drawing.Size(100, 20);
-            this.rdo_weeks.TabIndex = 6;
-            this.rdo_weeks.Text = "Semanas";
-            this.rdo_weeks.CheckedChanged += new System.EventHandler(this.rdo_weeks_CheckedChanged);
-            // 
-            // lbl_options
-            // 
-            this.lbl_options.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_options.Location = new System.Drawing.Point(6, 9);
-            this.lbl_options.Name = "lbl_options";
-            this.lbl_options.Size = new System.Drawing.Size(216, 20);
-            this.lbl_options.Text = "Opciones de lectura";
-            this.lbl_options.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Readings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -306,8 +306,8 @@
             this.Text = "Readings";
             this.tab_readings.ResumeLayout(false);
             this.tab_read.ResumeLayout(false);
-            this.tab_config.ResumeLayout(false);
             this.pnl_reading_options.ResumeLayout(false);
+            this.tab_config.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
