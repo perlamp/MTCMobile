@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace MTC_Mobile.Business
 {
-    public partial class Form1 : Form
+    public partial class MessageResponse : Form
     {
-        public Form1()
+        public MessageResponse()
         {
             InitializeComponent();
         }

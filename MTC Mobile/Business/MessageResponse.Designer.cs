@@ -1,6 +1,6 @@
 ﻿namespace MTC_Mobile.Business
 {
-    partial class Form1
+    partial class MessageResponse
     {
         /// <summary>
         /// Required designer variable.

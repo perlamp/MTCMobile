@@ -45,3 +45,4 @@ C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
 C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
 C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
 C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
+C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources

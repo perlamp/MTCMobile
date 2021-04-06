@@ -11,6 +11,9 @@ namespace MTC_Mobile
 {
     public partial class Procedures : Form
     {
+
+        Business.ReadFile readFile = new Business.ReadFile();
+
         public Procedures()
         {
             InitializeComponent();
@@ -37,8 +40,6 @@ namespace MTC_Mobile
             try
             {
                 Business.MessageResponse messageResponse;
-                pnlWorkArea.Controls.Clear();
-                pnlWorkArea.BackColor = Color.FromArgb(60, 60, 60);
 
                 if (cboSpecialTask.SelectedItem != null)
                 {
