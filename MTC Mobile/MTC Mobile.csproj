@@ -59,18 +59,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\MessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\MessageDialog.Designer.cs">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\MessageResponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\MessageResponse.Designer.cs">
+      <DependentUpon>MessageResponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\SetDateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\SetDateTime.Designer.cs">
+      <DependentUpon>SetDateTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="C1218\C1218.cs" />
     <Compile Include="C1218\crc1.cs" />
     <Compile Include="Dao\AccessLevelDao.cs" />
     <Compile Include="Dao\GenericDao.cs" />
     <Compile Include="Dao\IDao.cs" />
     <Compile Include="Dao\ModuleDao.cs" />
+    <Compile Include="Dao\PasswordDao.cs" />
     <Compile Include="Dao\ReadingDao.cs" />
     <Compile Include="Dao\SettingsDao.cs" />
     <Compile Include="Dao\TableDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Object\AccessLevel.cs" />
     <Compile Include="Object\Module.cs" />
+    <Compile Include="Object\Password.cs" />
     <Compile Include="Object\Reading.cs" />
     <Compile Include="Object\Table.cs" />
     <Compile Include="Security.cs">
@@ -80,6 +100,7 @@
       <DependentUpon>Security.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\Auth.cs" />
+    <Compile Include="Util\BAL_ENCRYPTER.cs" />
     <Compile Include="Util\Connection.cs" />
     <Compile Include="Util\Crypt.cs" />
     <Compile Include="Object\Settings.cs" />
@@ -115,12 +136,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedures.resx">
       <DependentUpon>Procedures.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +153,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Readings.resx">
       <DependentUpon>Readings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Security.resx">
       <DependentUpon>Security.cs</DependentUpon>
@@ -136,6 +161,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

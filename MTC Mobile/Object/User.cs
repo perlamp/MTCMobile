@@ -17,7 +17,6 @@ namespace MTC_Mobile.Object
         {
 
         }
-
         public User(string username, string password, AccessLevel accessLevel)
         {
             Crypt crypt = new Crypt();

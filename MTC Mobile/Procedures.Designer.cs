@@ -30,16 +30,26 @@
         private void InitializeComponent()
         {
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.cbo_procedures = new System.Windows.Forms.ComboBox();
-            this.btn_procedures = new System.Windows.Forms.Button();
             this.mnu_back = new System.Windows.Forms.MenuItem();
             this.mnu_exit = new System.Windows.Forms.MenuItem();
+            this.cbo_procedures = new System.Windows.Forms.ComboBox();
+            this.btn_procedures = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainMenu1
             // 
             this.mainMenu1.MenuItems.Add(this.mnu_back);
             this.mainMenu1.MenuItems.Add(this.mnu_exit);
+            // 
+            // mnu_back
+            // 
+            this.mnu_back.Text = "Atrás";
+            this.mnu_back.Click += new System.EventHandler(this.mnu_back_Click);
+            // 
+            // mnu_exit
+            // 
+            this.mnu_exit.Text = "Salir";
+            this.mnu_exit.Click += new System.EventHandler(this.mnu_exit_Click);
             // 
             // cbo_procedures
             // 
@@ -52,6 +62,7 @@
             this.cbo_procedures.Name = "cbo_procedures";
             this.cbo_procedures.Size = new System.Drawing.Size(226, 22);
             this.cbo_procedures.TabIndex = 21;
+            //this.cbo_procedures.SelectedIndexChanged += new System.EventHandler(this.pcbSelectedSpecialTask_Click);
             // 
             // btn_procedures
             // 
@@ -60,16 +71,6 @@
             this.btn_procedures.Size = new System.Drawing.Size(72, 20);
             this.btn_procedures.TabIndex = 20;
             this.btn_procedures.Text = "Ejecutar";
-            // 
-            // mnu_back
-            // 
-            this.mnu_back.Text = "Atrás";
-            this.mnu_back.Click += new System.EventHandler(this.mnu_back_Click);
-            // 
-            // mnu_exit
-            // 
-            this.mnu_exit.Text = "Salir";
-            this.mnu_exit.Click += new System.EventHandler(this.mnu_exit_Click);
             // 
             // Procedures
             // 
