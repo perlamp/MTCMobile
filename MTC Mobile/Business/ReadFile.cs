@@ -7,7 +7,7 @@ namespace MTC_Mobile.Business
 {
     class ReadFile
     {
-        Interface.Parser parser = new Interface.Parser();
+        /*Interface.Parser parser = new Interface.Parser();
         Interface.Meter deviceInterface = new Interface.Meter();
 
         public int[,] table_dir = new int[300, 3];
@@ -73,59 +73,7 @@ namespace MTC_Mobile.Business
                 throw;
             }
             return result;
-            //byte[] result = new byte[29];// = false;
-            //string[] dataRow = new string[2];
-            //try
-            //{
-            //    string path = pathDirectoryPassword + "passwordGral.xml";
-            //    List<string[]> passwordsFile = readFileXMLEncripted2(path, "passMeter");
-            //    //List<string[]> passwordsFile = readFileXMLEncripted(path, "passMeter");
-
-            //    switch (user)
-            //    {
-            //        case "READ ONLY":
-            //            dataRow[0] = passwordsFile[0][3];
-            //            dataRow[1] = passwordsFile[1][3];
-            //            break;
-            //        case "BILLING":
-            //            dataRow[0] = passwordsFile[2][3];
-            //            dataRow[1] = passwordsFile[3][3];
-            //            break;
-            //        case "FULL ACCESS":
-            //            dataRow[0] = passwordsFile[4][3];
-            //            dataRow[1] = passwordsFile[5][3];
-            //            break;
-            //        case "MANUFACTURER":
-            //            dataRow[0] = passwordsFile[6][3];
-            //            dataRow[1] = passwordsFile[7][3];
-            //            break;
-            //        case "SUPPORT":
-            //            dataRow[0] = passwordsFile[8][3];
-            //            dataRow[1] = passwordsFile[9][3];
-            //            break;
-            //        case "DEVELOPMENT":
-            //            dataRow[0] = passwordsFile[10][3];
-            //            dataRow[1] = passwordsFile[11][3];
-            //            break;
-            //    }
-
-            //    for (int i = 1; i>-1; i--)
-            //    {
-            //        if (!dataRow[i].Equals(""))
-            //        {
-            //            if (deviceInterface.validatePassword(parser.hexadecimalToBytesArray(parser.autocompleteBytes(parser.StringToHexadecimal(dataRow[i]).Replace(" ", ""), 40, "20", 2).ToUpper()), Program.gblPort.PortName, identity))
-            //            {
-            //                result = parser.hexadecimalToBytesArray(parser.autocompleteBytes(parser.StringToHexadecimal(dataRow[i]).Replace(" ", ""), 40, "20", 2).ToUpper());
-            //                break;
-            //            }
-            //        }
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    throw;
-            //}
-            //return res
-        }
+           
+        }*/
     }
 }

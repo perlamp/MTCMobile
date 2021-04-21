@@ -22,11 +22,11 @@ namespace MTC_Mobile.Business
         {
             InitializeComponent();
             Identity = identity;
-            populateTimeZones();
+            //populateTimeZones();
         }
 
-        public void populateTimeZones()
-        {
+        /*public void populateTimeZones()
+        //{
 
             foreach (TimeZoneInfo z in TimeZoneInfo.GetSystemTimeZones())
             {
@@ -38,7 +38,7 @@ namespace MTC_Mobile.Business
             }
             cbo_timeZone.SelectedIndex = zone_index;
             cbo_timeZone_1.SelectedIndex = zone_index;
-        }
+        }*/
 
         private void mnu_back_Click(object sender, EventArgs e)
         {

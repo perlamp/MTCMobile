@@ -12,7 +12,7 @@ namespace MTC_Mobile
     public partial class Procedures : Form
     {
 
-        Business.ReadFile readFile = new Business.ReadFile();
+        //Business.ReadFile readFile = new Business.ReadFile();
 
         public Procedures()
         {

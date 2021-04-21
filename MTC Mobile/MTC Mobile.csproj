@@ -90,6 +90,7 @@
     <Compile Include="Dao\TableDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Object\AccessLevel.cs" />
+    <Compile Include="Object\DefaultPassword.cs" />
     <Compile Include="Object\Module.cs" />
     <Compile Include="Object\Password.cs" />
     <Compile Include="Object\Reading.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Security.Designer.cs">
       <DependentUpon>Security.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecurityHandler_DB.cs" />
     <Compile Include="Util\Auth.cs" />
     <Compile Include="Util\BAL_ENCRYPTER.cs" />
     <Compile Include="Util\Connection.cs" />

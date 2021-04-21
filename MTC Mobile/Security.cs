@@ -18,11 +18,6 @@ namespace MTC_Mobile
             InitializeComponent();
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
-        {
-
-        }
-
          /* private void btn_update_Click(object sender, EventArgs e)
         {
             try

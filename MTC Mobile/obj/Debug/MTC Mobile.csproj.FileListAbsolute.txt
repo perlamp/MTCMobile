@@ -1,54 +1,10 @@
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.exe
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Properties.Resources.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.exe
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Readings.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\bin\Debug\Config\test.db
-C:\Users\TI330 USER\Documents\Visual Studio 2008\Projects\MTC Mobile\MTC Mobile\bin\Debug\Config\MTCm.db
-C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
-C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\Config\test.db
-C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\Config\MTCm.db
-C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.exe
-C:\Proyecto\MTC Mobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Properties.Resources.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Readings.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.exe
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
-<<<<<<< HEAD
-C:\Proyecto\MTC Mobile\MTC Mobile\obj\Debug\MTC_Mobile.Security.resources
-=======
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Properties.Resources.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Readings.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Security.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.exe
-C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
-C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\Config\test.db
-C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
-C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
-C:\Visual Studio\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
->>>>>>> 2640707e074afd4fdb1a914ad0fc29bf0677b24f
+C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
+C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\test.db
+C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
+C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
+C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
@@ -59,11 +15,3 @@ C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.exe
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
-C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
-C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\test.db
-C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
-C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
-C:\Proyecto\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
-C:\Visual Studio\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources
->>>>>>> 528eff7046df51665cfbe39c88a35df90543579c
-C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources
