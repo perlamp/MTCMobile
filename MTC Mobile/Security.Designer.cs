@@ -45,6 +45,7 @@
             this.btn_edit.Size = new System.Drawing.Size(72, 20);
             this.btn_edit.TabIndex = 0;
             this.btn_edit.Text = "Edit";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_update
             // 
@@ -53,6 +54,7 @@
             this.btn_update.Size = new System.Drawing.Size(72, 20);
             this.btn_update.TabIndex = 1;
             this.btn_update.Text = "Update";
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // cbx_rol
             // 
