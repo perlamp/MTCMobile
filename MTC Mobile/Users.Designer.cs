@@ -6,6 +6,7 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.MainMenu mainMenu1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -28,6 +29,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.mainMenu1 = new System.Windows.Forms.MainMenu();
+            this.mnu_back = new System.Windows.Forms.MenuItem();
+            this.mnu_exit = new System.Windows.Forms.MenuItem();
             this.label17 = new System.Windows.Forms.Label();
             this.cbo_readings = new System.Windows.Forms.ComboBox();
             this.btn_readings = new System.Windows.Forms.Button();
@@ -92,6 +96,21 @@
             this.tab_edit.SuspendLayout();
             this.tab_delete.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // mainMenu1
+            // 
+            this.mainMenu1.MenuItems.Add(this.mnu_back);
+            this.mainMenu1.MenuItems.Add(this.mnu_exit);
+            // 
+            // mnu_back
+            // 
+            this.mnu_back.Text = "Atrás";
+            this.mnu_back.Click += new System.EventHandler(this.mnu_back_Click);
+            // 
+            // mnu_exit
+            // 
+            this.mnu_exit.Text = "Salir";
+            this.mnu_exit.Click += new System.EventHandler(this.mnu_exit_Click);
             // 
             // label17
             // 
@@ -163,7 +182,7 @@
             this.tab_new.Controls.Add(this.lbl_new_username);
             this.tab_new.Location = new System.Drawing.Point(0, 0);
             this.tab_new.Name = "tab_new";
-            this.tab_new.Size = new System.Drawing.Size(232, 239);
+            this.tab_new.Size = new System.Drawing.Size(240, 242);
             this.tab_new.Text = "Nuevo";
             // 
             // lbl_new_confirm
@@ -375,7 +394,7 @@
             this.tab_edit.Controls.Add(this.lbl_edit_username);
             this.tab_edit.Location = new System.Drawing.Point(0, 0);
             this.tab_edit.Name = "tab_edit";
-            this.tab_edit.Size = new System.Drawing.Size(232, 239);
+            this.tab_edit.Size = new System.Drawing.Size(240, 242);
             this.tab_edit.Text = "Editar";
             // 
             // chk_edit_password
@@ -645,8 +664,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(240, 294);
+            this.ClientSize = new System.Drawing.Size(240, 268);
             this.Controls.Add(this.tab_users);
+            this.Menu = this.mainMenu1;
             this.Name = "Users";
             this.Text = "Users";
             this.tab_new.ResumeLayout(false);
@@ -666,6 +686,8 @@
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuItem mnu_back;
+        private System.Windows.Forms.MenuItem mnu_exit;
         private System.Windows.Forms.TabPage tab_new;
         private System.Windows.Forms.Button btn_new_save;
         private System.Windows.Forms.TextBox txt_new_password;

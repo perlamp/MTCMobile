@@ -15,3 +15,20 @@ C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.exe
 C:\Proyecto\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.pdb
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\bin\Debug\SQLite.Interop.111.dll
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\bin\Debug\Config\test.db
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\bin\Debug\Config\MTCm.db
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.exe
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\bin\Debug\MTC Mobile.pdb
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Business.SetDateTime.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Home.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Index.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Procedures.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Properties.Resources.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Readings.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Security.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC_Mobile.Users.resources
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.csproj.GenerateResource.Cache
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.exe
+C:\Users\TI0704\source\repos\MTCMobile\MTC Mobile\obj\Debug\MTC Mobile.pdb

@@ -12,7 +12,7 @@ namespace MTC_Mobile
         public static string sPortName = "COM0";
         public static byte[] Security;
         public static string loggedUser = "";
-
+        public static string strSetDateTime = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

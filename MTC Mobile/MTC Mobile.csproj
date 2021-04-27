@@ -89,6 +89,7 @@
     <Compile Include="Dao\SettingsDao.cs" />
     <Compile Include="Dao\TableDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
+    <Compile Include="Interface\TimeOfUse.cs" />
     <Compile Include="Object\AccessLevel.cs" />
     <Compile Include="Object\DefaultPassword.cs" />
     <Compile Include="Object\Module.cs" />

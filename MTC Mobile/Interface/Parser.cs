@@ -66,7 +66,7 @@ namespace MTC_Mobile.Interface
         /// </summary>
         /// <param name="hex"></param>
         /// <returns></returns>
-        public string hexStringToBinary(string hex)
+        public string HexadecimalToBinary(string hex)
         {
             hex = hex.Replace(" ", "");
             StringBuilder result = new StringBuilder();
@@ -230,7 +230,7 @@ namespace MTC_Mobile.Interface
             {
                 str_reverse = single_byte + str_reverse;
             }
-            string bitmap = this.hexStringToBinary(str_reverse);
+            string bitmap = this.HexadecimalToBinary(str_reverse);
             Int32 msByte_str = (1 + (~Convert.ToInt16(str_reverse, 16)));
 
             if (bitmap.Substring(0, 1).Equals("1"))
@@ -427,7 +427,7 @@ namespace MTC_Mobile.Interface
             string temp = "";
             for (int i = 0; i < recievedArray.Length; i++)
             {
-                temp = Convert.ToString(hexStringToBinary(recievedArray[i].ToUpper()));
+                temp = Convert.ToString(HexadecimalToBinary(recievedArray[i].ToUpper()));
                 temp = Reverse(temp);
                 binResponse += temp;
             }

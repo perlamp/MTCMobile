@@ -33,10 +33,9 @@
             this.mnu_back = new System.Windows.Forms.MenuItem();
             this.mnu_exit = new System.Windows.Forms.MenuItem();
             this.cboSpecialTask = new System.Windows.Forms.ComboBox();
-            this.btn_procedures = new System.Windows.Forms.Button();
-            this.cboSocketId = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnSendFrame = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // mainMenu1
@@ -56,69 +55,46 @@
             // 
             // cboSpecialTask
             // 
-            this.cboSpecialTask.Items.Add("Reinicio de Demanda");
-            this.cboSpecialTask.Items.Add("Sincronizar reloj");
-            this.cboSpecialTask.Items.Add("Reconfigurar Tarifa Horaria");
-            this.cboSpecialTask.Items.Add("Cambio de Claves");
-            this.cboSpecialTask.Items.Add("Corte y Reconexión");
-            this.cboSpecialTask.Location = new System.Drawing.Point(7, 36);
+            this.cboSpecialTask.Items.Add("Connect");
+            this.cboSpecialTask.Items.Add("Change passwords");
+            this.cboSpecialTask.Items.Add("End test mode");
+            this.cboSpecialTask.Items.Add("Disconnect");
+            this.cboSpecialTask.Items.Add("Demand reset");
+            this.cboSpecialTask.Items.Add("Get date/time");
+            this.cboSpecialTask.Items.Add("Set date/time");
+            this.cboSpecialTask.Items.Add("Start test mode");
+            this.cboSpecialTask.Location = new System.Drawing.Point(7, 26);
             this.cboSpecialTask.Name = "cboSpecialTask";
             this.cboSpecialTask.Size = new System.Drawing.Size(226, 22);
             this.cboSpecialTask.TabIndex = 21;
-            this.cboSpecialTask.SelectedIndexChanged += new System.EventHandler(this.pcbSelectedSpecialTask_Click);
-            // 
-            // btn_procedures
-            // 
-            this.btn_procedures.Location = new System.Drawing.Point(161, 232);
-            this.btn_procedures.Name = "btn_procedures";
-            this.btn_procedures.Size = new System.Drawing.Size(72, 20);
-            this.btn_procedures.TabIndex = 20;
-            this.btn_procedures.Text = "Ejecutar";
-            // 
-            // cboSocketId
-            // 
-            this.cboSocketId.Items.Add("1");
-            this.cboSocketId.Items.Add("2");
-            this.cboSocketId.Items.Add("3");
-            this.cboSocketId.Items.Add("4");
-            this.cboSocketId.Items.Add("5");
-            this.cboSocketId.Items.Add("6");
-            this.cboSocketId.Items.Add("7");
-            this.cboSocketId.Items.Add("8");
-            this.cboSocketId.Items.Add("9");
-            this.cboSocketId.Items.Add("10");
-            this.cboSocketId.Items.Add("11");
-            this.cboSocketId.Items.Add("12");
-            this.cboSocketId.Items.Add("13");
-            this.cboSocketId.Items.Add("14");
-            this.cboSocketId.Items.Add("15");
-            this.cboSocketId.Items.Add("16");
-            this.cboSocketId.Items.Add("17");
-            this.cboSocketId.Items.Add("18");
-            this.cboSocketId.Items.Add("19");
-            this.cboSocketId.Items.Add("20");
-            this.cboSocketId.Items.Add("21");
-            this.cboSocketId.Items.Add("22");
-            this.cboSocketId.Items.Add("23");
-            this.cboSocketId.Items.Add("24");
-            this.cboSocketId.Location = new System.Drawing.Point(7, 92);
-            this.cboSocketId.Name = "cboSocketId";
-            this.cboSocketId.Size = new System.Drawing.Size(226, 22);
-            this.cboSocketId.TabIndex = 22;
+            this.cboSpecialTask.SelectedIndexChanged += new System.EventHandler(this.cboSpecialTask_SelectedIndexChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(7, 10);
+            this.label1.Location = new System.Drawing.Point(7, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.Text = "Procedure";
             // 
-            // label2
+            // btnSendFrame
             // 
-            this.label2.Location = new System.Drawing.Point(7, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.Text = "Socket";
+            this.btnSendFrame.Enabled = false;
+            this.btnSendFrame.ForeColor = System.Drawing.Color.Black;
+            this.btnSendFrame.Location = new System.Drawing.Point(170, 56);
+            this.btnSendFrame.Name = "btnSendFrame";
+            this.btnSendFrame.Size = new System.Drawing.Size(62, 20);
+            this.btnSendFrame.TabIndex = 22;
+            this.btnSendFrame.Text = "Go";
+            this.btnSendFrame.Click += new System.EventHandler(this.btnSendFrame_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.White;
+            this.listBox1.ForeColor = System.Drawing.Color.Black;
+            this.listBox1.Location = new System.Drawing.Point(7, 81);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(226, 184);
+            this.listBox1.TabIndex = 23;
             // 
             // Procedures
             // 
@@ -126,11 +102,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnSendFrame);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cboSocketId);
             this.Controls.Add(this.cboSpecialTask);
-            this.Controls.Add(this.btn_procedures);
             this.Menu = this.mainMenu1;
             this.Name = "Procedures";
             this.Text = "Procedures";
@@ -140,12 +115,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_procedures;
         private System.Windows.Forms.MenuItem mnu_back;
         private System.Windows.Forms.MenuItem mnu_exit;
         private System.Windows.Forms.ComboBox cboSpecialTask;
-        private System.Windows.Forms.ComboBox cboSocketId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSendFrame;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }

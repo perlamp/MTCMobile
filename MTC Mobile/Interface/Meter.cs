@@ -56,7 +56,7 @@ namespace MTC_Mobile.Interface
                 if (configurePort(settings.getPort()))
                 {
                     //TIMER.initialize();
-                    control.user_id = 0;
+                    control.user_id = 3;
                     control.user = new Byte[ProtocolC1218.c1218.C1218_USER_LENGTH];
                     control.password = settings.getSecurity();
                     control.identity = 0;
@@ -124,7 +124,7 @@ namespace MTC_Mobile.Interface
                 if (configurePort(portName))
                 {
                     //TIMER.initialize();
-                    control.user_id = 0;
+                    control.user_id = 3;
                     control.user = new Byte[ProtocolC1218.c1218.C1218_USER_LENGTH];
                     control.password = Security; //Security;
                     control.identity = identity;
@@ -276,7 +276,6 @@ namespace MTC_Mobile.Interface
             }
         }
 
-
         public bool relayProcedure(string portName, string status, byte[] Security, byte identity)
         {
             byte response_code;
@@ -285,7 +284,7 @@ namespace MTC_Mobile.Interface
             {
                 if (configurePort(portName))
                 {
-                    control.user_id = 0;
+                    control.user_id = 3;
                     control.user = new Byte[ProtocolC1218.c1218.C1218_USER_LENGTH];
                     control.password = Security;
                     control.identity = identity;
@@ -344,6 +343,168 @@ namespace MTC_Mobile.Interface
             return ejecuted;
         }
 
+        public bool writeTimeZone(string portName, byte[] Security, string[] tables, byte identity)
+        {
+            byte response_code;
+            bool status = false;
+            try
+            {
+                if (configurePort(portName))
+                {
+                    control.user_id = 3;
+                    control.user = new Byte[ProtocolC1218.c1218.C1218_USER_LENGTH];
+                    control.password = Security;
+                    control.identity = identity;
+                    control.nbr_retries = 2;
 
+                    /// finaliza la sesion
+                    response_code = PORT1.APP_bTerminate_service_request(control);
+
+                    /// Logon
+                    response_code = PORT1.APP_bLog_on_service_request(control);
+                    if (response_code == ProtocolC1218.c1218.C1218_OK)
+                    {
+                        /// Security
+                        response_code = PORT1.APP_bSecurity_service_request(control);
+                        if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                        {
+                            byte[] data = parser.hexadecimalToBytes(tables[0]);
+                            response_code = PORT1.APP_bProcedure_request(control, 10, 0, 6, data);
+                            if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                            {
+                                data = parser.hexadecimalToBytes(tables[2]);
+                                response_code = PORT1.APP_bFull_write_service_request(control, 53, 7, data);
+                                if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                                {
+                                    status = true;
+                                }
+                            }
+                            //finaliza la sesion
+                            PORT1.APP_bLog_off_service_request(control);
+                            PORT1.APP_bTerminate_service_request(control);
+                        }
+                    }
+                    PORT1.APP_vRx_abort();
+                    PORT1.APP_vTx_abort();
+                    serialPort1.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                serialPort1.Close();
+                throw ex;
+            }
+            return status;
+        }
+
+        public string[] getDateTime(string portName, byte[] Security, byte identity)
+        {
+            Interface.TimeOfUse tou = new Interface.TimeOfUse();
+            string[] strCalendar = new string[4];
+            string[] response = new string[4];
+            string ressponse = "";
+            Byte response_code;
+
+            try
+            {
+                if (configurePort(portName))
+                {
+                    control.user_id = 3;
+                    control.user = new Byte[ProtocolC1218.c1218.C1218_USER_LENGTH];
+                    control.password = Security;
+                    control.identity = identity;
+                    control.nbr_retries = 2;
+
+                    /// finaliza la sesion
+                    response_code = PORT1.APP_bTerminate_service_request(control);
+
+                    /// Logon
+                    response_code = PORT1.APP_bLog_on_service_request(control);
+                    if (response_code == ProtocolC1218.c1218.C1218_OK)
+                    {
+                        /// Security
+                        response_code = PORT1.APP_bSecurity_service_request(control);
+                        if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                        {
+                            response_code = PORT1.APP_bFull_read_service_request(control, 51/*Table 51*/);
+                            if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                            {
+                                ressponse = UTIL.ByteBuffer_to_StringHex(PORT1.APP_bGet_rx_data(), PORT1.APP_bGet_rx_data_length());
+                                ressponse = ressponse.Substring(9, ressponse.Length - 13);
+                                response[0] = ressponse;
+                            }
+                            else
+                            {
+                                response[0] = "";
+                            }
+                            response_code = PORT1.APP_bFull_read_service_request(control, 52/*Table 52*/);
+                            if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                            {
+                                ressponse = UTIL.ByteBuffer_to_StringHex(PORT1.APP_bGet_rx_data(), PORT1.APP_bGet_rx_data_length());
+                                ressponse = ressponse.Substring(9, ressponse.Length - 13);
+                                response[1] = ressponse;
+                            }
+                            else
+                            {
+                                response[1] = "";
+                            }
+                            response_code = PORT1.APP_bFull_read_service_request(control, 53);
+                            if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                            {
+                                ressponse = UTIL.ByteBuffer_to_StringHex(PORT1.APP_bGet_rx_data(), PORT1.APP_bGet_rx_data_length());
+                                ressponse = ressponse.Substring(9, ressponse.Length - 13);
+                                response[2] = ressponse;
+                            }
+                            else
+                            {
+                                response[2] = "";
+                            }
+                            response_code = PORT1.APP_bFull_read_service_request(control, 53 + 2048);
+                            if (response_code.Equals(ProtocolC1218.c1218.C1218_OK))
+                            {
+                                ressponse = UTIL.ByteBuffer_to_StringHex(PORT1.APP_bGet_rx_data(), PORT1.APP_bGet_rx_data_length());
+                                ressponse = ressponse.Substring(15, ressponse.Length - 18);
+                                response[3] = ressponse;
+                            }
+                            else
+                            {
+                                response[3] = "";
+                            }
+
+                            if (!response[0].Equals("") && !response[1].Equals("") && !response[2].Equals(""))
+                            {
+                                tou.ST51 = response[0];
+                                tou.ST52 = response[1];
+                                tou.ST53 = response[2];
+                                tou.MT53 = response[3];
+
+                                List<string> lstTable53 = tou.humanReadableST53;
+                                Int32 intEpoch = Convert.ToInt32(parser.get_little_endian_val(response[1].Substring(0, 12)));
+                                string[] dates = parser.epoch2string(intEpoch);
+
+                                List<string> MT53 = tou.humanReadableMT53;
+
+                                strCalendar[0] = dates[1];
+                                strCalendar[1] = lstTable53[2];
+                                strCalendar[2] = dates[0];
+                                strCalendar[3] = MT53[0].ToString().TrimEnd();
+                            }
+                            //finaliza la sesion
+                            PORT1.APP_bLog_off_service_request(control);
+                            PORT1.APP_bTerminate_service_request(control);
+                        }
+                    }
+                    PORT1.APP_vRx_abort();
+                    PORT1.APP_vTx_abort();
+                    serialPort1.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                serialPort1.Close();
+                throw ex;
+            }
+            return strCalendar;
+        }
     }
 }

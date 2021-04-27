@@ -71,8 +71,6 @@ namespace MTC_Mobile
 
         private void btn_procedures_Click(object sender, EventArgs e)
         {
-            Cursor.Current = Cursors.WaitCursor;
-            Cursor.Show();
 
             Procedures frmProcedures = new Procedures();
             frmProcedures.ShowDialog();
