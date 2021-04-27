@@ -31,14 +31,15 @@ namespace MTC_Mobile
 
                     if (saved)
                     {
-                        MessageBox.Show("Successfully written passwords in the user role", "Information", MessageBoxButtons.OK, MessageBoxIcon.None,MessageBoxDefaultButton.Button1);
+                        MessageBox.Show("Successfully written passwords in the user role", "Information", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1);
+                        btn_update.Enabled = false;
                     }
                     else
                     {
                         MessageBox.Show("Failed written passwords in the user role", "Fail", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        btn_update.Enabled = true;
                     }
                 }
-                //btnNew.Visible = true;
             }
             catch (Exception ex)
             {
@@ -53,6 +54,8 @@ namespace MTC_Mobile
             txt_oldPassword.Text = txt_newPassword.Text;
             txt_newPassword.Text = "";
             txt_newPassword.Focus();
+            btn_update.Enabled = true;
+
         }
     }
 }

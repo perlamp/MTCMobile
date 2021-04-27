@@ -16,6 +16,7 @@ namespace MTC_Mobile
     public partial class Users : Form
     {
         /* GENERAL */
+        SecurityHandler_DB db = new SecurityHandler_DB();
 
         public Users()
         {
@@ -161,6 +162,14 @@ namespace MTC_Mobile
                     if (res.getResult())
                     {
                         message = "Usuario creado";
+                        if (db.AddUser(txt_new_username.Text, txt_new_password.Text, cbo_new_level.Text))
+                        {
+                            message = "Usuario creado";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error al registrar usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        }
                         loadNew();
                     }
                     else

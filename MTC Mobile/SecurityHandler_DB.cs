@@ -48,7 +48,7 @@ namespace MTC_Mobile
             try
             {
                 con.Open();
-                String sql2 = "SELECT * FROM access_level WHERE NAME = '" + cypher.EncryptDecrypt(strName) + "'; ";
+                String sql2 = "SELECT * FROM access_levels WHERE NAME = '" + cypher.EncryptDecrypt(strName) + "'; ";
                 SQLiteCommand command2 = new SQLiteCommand(sql2, con);
                 SQLiteDataReader reader2 = command2.ExecuteReader();
                 while (reader2.Read())
@@ -70,7 +70,7 @@ namespace MTC_Mobile
         }
 
 
-        public bool AddUser(String strName, String strPassword, String strAccessLevel, String strEmail, String strStatus)
+        public bool AddUser(String strName, String strPassword, String strAccessLevel)
         {
             bool bolResult = false;
             try
@@ -83,17 +83,7 @@ namespace MTC_Mobile
                 }
 
                 con.Open();
-                // insertamos el usuario
                 String sql1 = "";
-                if (strAccessLevel != null)
-                {
-                    sql1 = "INSERT INTO users (username, password, access_level_id, EMAIL, USER_STATUS) values ('" + cypher.EncryptDecrypt(strName) + "','" + cypher.EncryptDecrypt(strPassword) + "'," + strAccess[0] + ", '" + cypher.EncryptDecrypt(strEmail) + "',1)";
-                }
-
-                SQLiteCommand command1 = new SQLiteCommand(sql1, con);
-                command1.ExecuteNonQuery();
-                command1.Dispose();
-
                 /// Obtenemos las contraseñas por default
                 String sql2 = "select * from default_passwords where level <= 6"; //  + strMain[0];
                 SQLiteCommand command2 = new SQLiteCommand(sql2, con);

@@ -45,5 +45,6 @@ namespace MTC_Mobile
                 System.Windows.Forms.MessageBox.Show(ex.Message + " when " + cboSpecialTask.SelectedItem.ToString(), "Procedure", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
         }
+        
     }
 }
